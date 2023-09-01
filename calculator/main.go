@@ -11,11 +11,20 @@ func main() {
 	fmt.Println("CALCULATOR GO 1.0")
 	fmt.Println("=================")
 	fmt.Println("(add, subtract, multiply, divide)")
-	fmt.Scanf("%s", &operator)
+	_, operatorError := fmt.Scanf("%s", &operator)
+	if operatorError != nil {
+		return
+	}
 	fmt.Println("Enter first number:")
-	fmt.Scanf("%d", &a)
+	_, aError := fmt.Scanf("%d", &a)
+	if aError != nil {
+		return
+	}
 	fmt.Println("Enter second number:")
-	fmt.Scanf("%d", &b)
+	_, bError := fmt.Scanf("%d", &b)
+	if bError != nil {
+		return
+	}
 	fmt.Println("Result:")
 
 	switch operator {

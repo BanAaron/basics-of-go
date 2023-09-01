@@ -20,6 +20,5 @@ func main() {
 	age := 27
 	addYear(&age)
 	printPointer(&age)
-
 	age = addYearNoPointer(age)
 }
