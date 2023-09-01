@@ -6,9 +6,14 @@ import (
 )
 
 func main() {
-	content, err := fileutils.ReadTextFile("aaron")
-	if err != nil {
-		panic(err)
+	passwords, readFileError := fileutils.ReadTextFile("/data/secret_passwords.txt")
+	if readFileError != nil {
+		panic(readFileError)
 	}
-	fmt.Println(content)
+
+	writeFileError := fileutils.WriteTextFile("/data/stolen_passwords.txt", passwords)
+	if writeFileError != nil {
+		panic(writeFileError)
+	}
+	fmt.Println("Passwords stolen!")
 }
