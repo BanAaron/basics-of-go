@@ -2,5 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/stringer-interface/aaronbarratt.dev/go/stringer-interface" vcs="Git" />
   </component>
 </project>
