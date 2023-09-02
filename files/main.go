@@ -1,8 +1,9 @@
 package main
 
 import (
-	"aaronbarratt.dev/go/files/fileutils"
 	"fmt"
+
+	"aaronbarratt.dev/go/files/fileutils"
 )
 
 func main() {

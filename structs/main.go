@@ -21,8 +21,13 @@ func main() {
 		name:  "Charlie",
 		age:   3,
 		breed: "French Bulldog",
-		bark:  "Awooo",
+		bark:  "Woof",
 	}
+	// we can do this positionally as well
+	jake := dog{"Jake", 5, "British Bulldog", "Arf"}
+
 	// call methods like so
 	fmt.Println(charlie.speak())
+	fmt.Println(jake.speak())
+
 }

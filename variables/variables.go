@@ -23,7 +23,7 @@ func main() {
 		fmt.Println(block)
 	}
 	// therefore this doesn't work:
-	//fmt.Println(block)
+	// fmt.Println(block)
 
 	fmt.Println(x, pi)
 	fmt.Println(text)

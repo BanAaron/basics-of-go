@@ -22,5 +22,5 @@ func main() {
 	// because Exported is title case it is exported from aaron.go
 	aaron.Exported()
 	// but notExported() does not work because it is camel case
-	//aaron.notExported()
+	// aaron.notExported()
 }
