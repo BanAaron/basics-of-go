@@ -25,13 +25,13 @@ type dog struct {
 
 // newDog is like an init, we can pass arguments into animal with it
 func newDog(species string, name string, breed string, age int) dog {
-	dog := dog{
+	d := dog{
 		animal: animal{species, name},
 		name:   name,
 		breed:  breed,
 		age:    age,
 	}
-	return dog
+	return d
 }
 
 // stringer / __repr__ method

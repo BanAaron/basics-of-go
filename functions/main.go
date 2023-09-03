@@ -13,6 +13,7 @@ func addAndSubtract(a int, b int) (int, int) {
 }
 
 func main() {
+	// call a function like so
 	result := add(1, 2)
 	fmt.Println(result)
 
