@@ -9,7 +9,7 @@ import (
 // you can also use them to wait for a routine to end
 
 func count(number int, channel chan string) {
-	for i := 0; i < number; i++ {
+	for i := number - number; i < number; i++ {
 		fmt.Println(i + 1)
 		time.Sleep(time.Second / 2)
 	}
@@ -21,7 +21,8 @@ func main() {
 	channel := make(chan string)
 	go count(5, channel)
 	// this waits for the goroutine that takes this channel to complete
-	<-channel
+	result := <-channel
+	fmt.Println(result)
 
 	// we can make buffer channels by providing a number
 	buffer := make(chan string, 3)
@@ -33,4 +34,8 @@ func main() {
 	fmt.Println(<-buffer)
 	fmt.Println(<-buffer)
 	fmt.Println(<-buffer)
+
+	// we should close channels once we are done with them
+	close(channel)
+	close(buffer)
 }
