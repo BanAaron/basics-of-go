@@ -1,6 +1,7 @@
 package api
 
 import (
+	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
@@ -11,23 +12,27 @@ import (
 
 const apiURL = "https://cex.io/api/ticker/%s/USD"
 
-func GetRate(currency string) (*datatypes.Rate, error) {
-	currency = strings.ToUpper(currency)
-	result, err := http.Get(fmt.Sprintf(apiURL, currency))
+func GetRate(cryptoCurrency string) (*datatypes.Rate, error) {
+	cryptoCurrency = strings.ToUpper(cryptoCurrency)
+	result, err := http.Get(fmt.Sprintf(apiURL, cryptoCurrency))
 	if err != nil {
 		return nil, err
 	}
+	var response CexResponse
 	if result.StatusCode == http.StatusOK {
 		httpBody, err := io.ReadAll(result.Body)
 		if err != nil {
 			return nil, err
 		}
-		json := string(httpBody)
-		fmt.Println(json)
+		err = json.Unmarshal(httpBody, &response)
+		if err != nil {
+			return nil, err
+		}
+
 	} else {
 		return nil, fmt.Errorf("status code: %v", result.StatusCode)
 	}
 
-	rate := datatypes.Rate{Currency: currency, Price: 20}
+	rate := datatypes.Rate{Currency: cryptoCurrency, Price: response.Bid}
 	return &rate, nil
 }
