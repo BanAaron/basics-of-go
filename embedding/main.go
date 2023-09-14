@@ -34,7 +34,7 @@ func newDog(species string, name string, breed string, age int) dog {
 	return d
 }
 
-// stringer / __repr__ method
+// stringer is like a __repr__ method from Python
 func (d dog) String() string {
 	return fmt.Sprintf(
 		"%s %s %s %s %d",
