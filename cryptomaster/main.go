@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"aaronbarratt.dev/go/cryptomaster/api"
+	"github.com/banaaron/cryptomaster/api"
 )
 
 func main() {

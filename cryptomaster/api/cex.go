@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"aaronbarratt.dev/go/cryptomaster/datatypes"
+	"github.com/banaaron/cryptomaster/datatypes"
 )
 
 const apiURL = "https://cex.io/api/ticker/%s/USD"

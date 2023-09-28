@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"aaronbarratt.dev/go/interface/animal"
+	"github.com/banaaron/interface/animal"
 )
 
 func main() {

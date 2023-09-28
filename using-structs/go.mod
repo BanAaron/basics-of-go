@@ -1,3 +1,3 @@
-module aaronbarratt.dev/go/using-structs
+module github.com/banaaron/using-structs
 
 go 1.21.0

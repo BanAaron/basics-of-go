@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-
-	"aaronbarratt.dev/go/factories/data"
 )
 
 func main() {

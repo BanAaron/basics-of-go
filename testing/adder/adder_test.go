@@ -3,7 +3,7 @@ package adder_test
 import (
 	"testing"
 
-	"aaronbarratt.dev/go/testing/adder"
+	"github.com/banaaron/testing/adder"
 )
 
 func TestAdder(t *testing.T) {

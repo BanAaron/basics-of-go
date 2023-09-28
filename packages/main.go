@@ -2,7 +2,7 @@ package main
 
 import (
 	// we import from another module like this
-	"aaronbarratt.dev/go/packges/aaron"
+	"github.com/banaaron/packges/aaron"
 	// import from core modules like this
 	"fmt"
 )

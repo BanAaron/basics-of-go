@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"aaronbarratt.dev/go/femm/data"
+	"github.com/banaaron/femm/data"
 )
 
 func Post(writer http.ResponseWriter, request *http.Request) {

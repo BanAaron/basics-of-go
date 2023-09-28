@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"aaronbarratt.dev/go/stringer-interface/data"
+	"github.com/banaaron/stringer-interface/data"
 )
 
 func main() {

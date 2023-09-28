@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"aaronbarratt.dev/go/files/fileutils"
+	"github.com/banaaron/files/fileutils"
 )
 
 func main() {

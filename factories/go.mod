@@ -1,3 +1,3 @@
-module aaronbarratt.dev/go/factories
+module github.com/banaaron/factories
 
 go 1.21.0

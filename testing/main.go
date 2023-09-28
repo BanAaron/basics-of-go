@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"aaronbarratt.dev/go/testing/adder"
+	"github.com/banaaron/testing/adder"
 )
 
 func main() {

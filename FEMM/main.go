@@ -5,11 +5,10 @@ import (
 	"html/template"
 	"net/http"
 
-	"aaronbarratt.dev/go/femm/api"
-	"aaronbarratt.dev/go/femm/data"
+	"github.com/banaaron/femm/api"
+	"github.com/banaaron/femm/data"
 )
 
-// handleHello
 func handleHello(writer http.ResponseWriter, request *http.Request) {
 	_, err := writer.Write([]byte("Hello, World!"))
 	if err != nil {

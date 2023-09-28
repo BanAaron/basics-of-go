@@ -1,3 +1,3 @@
-module aaronbarratt.dev/go/packges
+module github.com/banaaron/packges
 
 go 1.21.0

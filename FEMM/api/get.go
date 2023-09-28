@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"aaronbarratt.dev/go/femm/data"
+	"github.com/banaaron/femm/data"
 )
 
 func Get(writer http.ResponseWriter, request *http.Request) {

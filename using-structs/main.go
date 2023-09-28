@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"aaronbarratt.dev/go/using-structs/data"
+	"github.com/banaaron/using-structs/data"
 )
 
 func main() {
