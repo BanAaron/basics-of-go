@@ -1,18 +1,39 @@
 package main
 
-import (
-	"fmt"
+import "fmt"
 
-	"github.com/banaaron/interface/animal"
-)
+type saveable interface {
+	save()
+}
+
+type jpeg struct {
+	name   string
+	width  int
+	height int
+}
+
+func (j jpeg) save() {
+	fmt.Printf("%s.jpeg", j.name)
+}
+
+type mp4 struct {
+	name   string
+	frames []int
+}
+
+func (m mp4) save() {
+	fmt.Printf("%s.mp4", m.name)
+}
 
 func main() {
-	charlie := animal.Dog{Name: "Charlie", Breed: "French Bulldog"}
-	billy := animal.Cat{Name: "Billy", Breed: "Tabby"}
-	// create an array of types that implement the CanSpeak interface
-	animals := [2]animal.CanSpeak{charlie, billy}
-	for _, a := range animals {
-		fmt.Println(a.Speak())
-		fmt.Println(a.ListensToCommands())
+	myNuts := jpeg{"my ball bag", 100, 100}
+	mySexTape := mp4{
+		name:   "raw dogging",
+		frames: []int{1, 2, 3, 4, 5},
+	}
+
+	items := []saveable{myNuts, mySexTape}
+	for _, item := range items {
+		item.save()
 	}
 }

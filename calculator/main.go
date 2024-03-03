@@ -2,11 +2,15 @@ package main
 
 import (
 	"fmt"
+	"github.com/banaaron/cantrips"
 )
 
 func main() {
 	var operator string
 	var a, b int
+
+	cantrips.Pop()
+	cantrips.KeysOrdered()
 
 	fmt.Println("CALCULATOR GO 1.0")
 	fmt.Println("=================")

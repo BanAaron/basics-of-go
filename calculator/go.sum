@@ -1,0 +1,8 @@
+github.com/banaaron/cantrips v0.0.0 h1:ogqrXADQtaijYqZEZVfxOY1lcL7vq5o6VO9KJaTl50U=
+github.com/banaaron/cantrips v0.0.0/go.mod h1:5zKk0jovMj/rUjIeWbdjRXiwCqSeNRg3vEeP9LXssS0=
+github.com/banaaron/cantrips v0.0.1 h1:/BnJhbI9cTCi6WXpF6bX9nRgtsZTn4/fkbZrn1Uofx8=
+github.com/banaaron/cantrips v0.0.1/go.mod h1:5zKk0jovMj/rUjIeWbdjRXiwCqSeNRg3vEeP9LXssS0=
+github.com/banaaron/gotils v0.1.0 h1:etLQ/6tEIIiCjf7Mj99tfhavV5NIEIQfZfzSoCjVHvM=
+github.com/banaaron/gotils v0.1.0/go.mod h1:8NtLu3uKO+JZHZ+iQrF5kKMSGBWSt3ImP5Mcjpe7G4o=
+golang.org/x/text v0.13.0 h1:ablQoSUd0tRdKxZewP80B+BaqeKJuVhuRxj/dkrun3k=
+golang.org/x/text v0.13.0/go.mod h1:TvPlkZtksWOMsz7fbANvkp4WM8x/WCo/om8BMLbz+aE=
